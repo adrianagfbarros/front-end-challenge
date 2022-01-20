@@ -1,0 +1,14 @@
+/*
+Theme Name: Apiki Blog
+Author: Adriana Barros
+Author URI: https://wordpress.org/
+Description: Apiki Blog Theme for developers.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: apikiblog
+*/
+
+body {
+    background-color: aqua;
+}
