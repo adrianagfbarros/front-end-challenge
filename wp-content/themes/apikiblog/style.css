@@ -4,7 +4,100 @@ Author: Adriana Barros
 Version: 1.0
 */
 
-body {
-    background-color: salmon;
-    color: red;
+:root {
+    --main-font: Helvetica, Arial, sans-serif;
+    --secondary-font: Arial, sans-serif;
+    --main-color: #67666a;
+    --secondary-color: #ba007c;
+    --secondary-color-60: #bf91b0;
+    --accent-color: #e8e8e8;
+    font-size: 16px;
 }
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: var(--secondary-font);
+}
+
+.header {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+
+.header__logo {
+}
+
+.header__bar {
+    height: 5vh;
+    width: 100%;
+    background-color: var(--accent-color);
+}
+
+.post__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.post__card {
+    margin: 0 auto;
+    padding: 2em 3em;
+    width: 80%;
+    background-color: var(--accent-color);
+}
+
+.post__title {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.post__title,
+.post__link,
+.post__link:visited {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.post__link {
+    text-decoration: none;
+}
+
+.footer {
+    height: 5vh;
+    width: 100%;
+    padding-top: 1%;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.footer__content {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--accent-color);
+}
+
+.footer__link,
+.footer__link:visited {
+    color: var(--secondary-color-60);
+    text-decoration: none;
+}
+

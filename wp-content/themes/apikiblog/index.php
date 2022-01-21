@@ -4,9 +4,18 @@
 
     while(have_posts()) {
         the_post(); ?>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <?php the_content(); ?>
-        <hr>
+        <main class="post__container">
+
+            <article class="post__card">
+
+                <h2 class="post__title" ><a class="post__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                
+                <p class="post__content"><?php the_content(); ?></p>
+
+
+            </article>
+
+        </main>
 
     <?php }
 

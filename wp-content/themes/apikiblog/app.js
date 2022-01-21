@@ -1,3 +1,4 @@
+/*
 let requestPosts = new XMLHttpRequest();
 requestPosts.open('GET', 'https://blog.apiki.com/wp-json/wp/v2/posts?_embed&categories=518');
 requestPosts.onload = () => {
@@ -13,3 +14,4 @@ requestPosts.onerror = () => {
 };
 
 requestPosts.send();
+*/
